@@ -1,0 +1,64 @@
+@import "src/scss/font.scss";
+@import "src/scss/colors.scss";
+
+.header {
+    display: flex;
+    > h2 {
+        height: 8vh;
+        min-height: fit-content;
+        font-size: map-get($font-size, subtittle );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+};
+.name {
+    width: 30%;
+}
+.griffe {
+    width: 20%;
+}
+.category {
+    width: 20%;
+}
+.update {
+    width: 20%;
+}
+
+ul > li {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    &:nth-child(even) {
+        background-color: $dark3;
+    }
+    &:hover {
+        background-color: $light4;
+    }
+    > span {
+        font-size: map-get($font-size, item );
+        font-weight: map-get($font-weight, strong );
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 5px;
+        cursor: context-menu;
+    }
+    > hr {
+        height: 100%;
+    }
+    > .details {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        font-weight: map-get($font-weight, strongest );
+        font-family: "Nunito";
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+            transition: 200ms;
+        }
+    }
+}

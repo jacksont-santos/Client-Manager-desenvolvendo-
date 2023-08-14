@@ -1,0 +1,31 @@
+<div class="header">
+    <h2 class="name">
+        NOME
+    </h2>
+    <hr/>
+    <h2 class="griffe">
+        GRIFFE
+    </h2>
+    <hr/>
+    <h2 class="category">
+        CATEGORIA
+    </h2>
+    <hr/>
+    <h2 class="update">
+        ATUALIZADO EM:
+    </h2>
+</div>
+<hr/>
+<ul>
+    <li *ngFor="let item of productList">
+        <span class="name">{{item.name}}</span>
+        <hr/>
+        <span class="griffe"> {{item.grife}}</span>
+        <hr/>
+        <span class="category">{{item.category}}</span>
+        <hr/>
+        <span class="update">{{item.updatedAt}}</span>
+        <hr/>
+        <span class="details">Detalhes</span>
+    </li>
+</ul>

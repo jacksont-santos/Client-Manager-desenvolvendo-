@@ -1,0 +1,53 @@
+@import "src/scss/colors.scss";
+@import "src/scss/font.scss";
+
+div {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+
+    input:-internal-autofill-selected,
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+        -webkit-text-fill-color: $dark1;
+        outline: 0;
+    };
+    > input {
+        width: 100%;
+        outline: 0;
+        background: $light1;
+        border: none;
+        height: 6vh;
+        padding: 8px;
+        border-radius: 10px;
+        font-size: map-get($font-size, default );
+        color: $dark1;
+    };
+    > label {
+        position: absolute;
+        left: 8px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: 300ms ease;
+    }
+    > i {
+        position: absolute;
+        right: 5px;
+        cursor: pointer;
+
+        &:hover {
+            color: $info;
+        }
+    }
+}

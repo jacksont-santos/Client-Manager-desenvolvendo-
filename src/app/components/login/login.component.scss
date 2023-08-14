@@ -1,0 +1,39 @@
+@import "src/scss/colors.scss";
+
+#form {
+  background-color: $light2;
+  width: 70%;
+  height: 60%;
+  max-width: 540px;
+  max-height: 680px;
+  box-shadow: 0 0px 5px 0px $gold1, 0 0px 0px 0px $gold1;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > div {
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  > button {
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 8px;
+    color: #0748df;
+    font-weight: 900;
+    font-size: larger;
+    cursor: pointer;
+    &:hover {
+      background-color: #0748df;
+      color: #ffffff;
+    }
+  }
+}

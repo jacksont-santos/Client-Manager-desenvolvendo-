@@ -1,0 +1,22 @@
+<div>
+    <input
+        type="{{type}}"
+        id="{{id}}"
+        (input)="inputEvent($event)"
+        (focus)="setActive(true)"
+        (blur)="inputEvent($event)"
+    />
+    <label
+        for="{{id}}"
+        [style.transform]="active ? 'translateY(-50%)' : ''"
+    >
+        {{label}}
+    </label>
+    <i
+        *ngIf="icon"
+        (click)="iconHandle()"
+        class="material-icons"
+    >
+        {{icon}}
+    </i>
+</div>

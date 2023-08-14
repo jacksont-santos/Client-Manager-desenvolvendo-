@@ -1,0 +1,15 @@
+$font-size: (
+    tittle: clamp(14px, 1.614vw, 32px),
+    subtittle: clamp(14px, 1.4vw, 24px),
+    item: clamp(12px, 1vw, 18px),
+    default: 12px,
+);
+$line-height: (
+    tittle: 28px,
+    default: 16px,
+);
+$font-weight: (
+  "strongest": 900,
+  "strong": 600,
+  "medium": 500,
+);

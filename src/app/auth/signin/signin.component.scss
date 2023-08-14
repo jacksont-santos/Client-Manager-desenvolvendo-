@@ -1,0 +1,54 @@
+@import "src/scss/colors.scss";
+@import "src/scss/font.scss";
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: $light1;
+    display: flex;
+    justify-content: center;
+    > img {
+        position: absolute;
+        background-color: $light2;
+        border-radius: 25%;
+        width: 8%;
+        top: 5%
+    }
+    > section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    > section:first-of-type {
+        width: 60%;
+        padding-left: 7vw;
+        > h1, span {
+            font-weight: map-get($font-weight, 'strongest' );
+            font-size: map-get($font-size, tittle );
+            color: $dark1;
+            display: flex;
+            align-items: center;
+            > i {
+                color: $success;
+                margin-right: 10px;
+                font-size: map-get($font-size, tittle ) !important;
+            }
+        }
+        > h1 {
+            margin-bottom: 20px;
+        }
+        > span {
+            margin-bottom: 15px;
+        }
+    }
+    > section:last-of-type {
+        width: 40%;
+        > login {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
